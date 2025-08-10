@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Rocketswarm Over Walls</name>
+    <author>jrussell11</author>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <description>Allows the rocketswarm launcher to fire indirectly over walls like a mortar, making it function as proper rocket artillery.</description>
+    <packageId>jrussell11.rocketswarmoverwalls</packageId>
+    <url>https://github.com/jrussell11/RocketswarmOverWalls</url>
+</ModMetaData>

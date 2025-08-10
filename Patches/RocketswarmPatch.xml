@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Add flyOverhead=true to the rocket projectile so it arcs over walls -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Proj_Rocket"]/projectile</xpath>
+        <value>
+            <flyOverhead>true</flyOverhead>
+        </value>
+    </Operation>
+
+    <!-- Remove line of sight requirement from rocketswarm launcher -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Gun_RocketswarmLauncher"]/verbs/li</xpath>
+        <value>
+            <requireLineOfSight>false</requireLineOfSight>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_RocketswarmLauncher"]/verbs/li/range</xpath>
+        <value>
+            <range>128</range>
+        </value>
+    </Operation>
+
+    <!-- Optional: Increase range for true artillery feel (comment to disable) -->
+    <!-- OLD
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Turret_RocketswarmLauncher"]/building/turretGunDef/verbs/li/range</xpath>
+        <value>
+            <range>256</range>
+        </value>
+    </Operation>
+    -->
+</Patch>
